@@ -1,0 +1,23 @@
+Database Information:
+	host = 127.0.0.1
+	user = root
+	password = 
+	database_name = test
+
+Specification:
+1. Database must be connected
+2. Threads should be sorted by created Latest
+3. After clicking link thread it must go to correct thread detail
+4. Advertisements in Comment Section should show every 4th Comment 
+	Page 1; 1st, 2nd ,3rd, 4th , Ads, 5th
+	Page 2; 6th, 7th, 8th, Ads, 9th, 10th
+	etc etc
+5. Paging contains 5 comment. 
+6. Added comment must be on the top
+7. Thread title must be capitalized in Detail Page (First Letter of the Word only)
+8. Sql must not be prone to SQL Injections
+9. Prevent XSS (Cross-site scripting)
+	ex: if the data from DB contain malicious code
+	// data from DB contain this code : <script> alert('malicious code'); </script>
+	<?php echo $data; ?> it will alert after php execution
+10. Thread title should accept only alphanumeric and limit 20
